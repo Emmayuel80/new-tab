@@ -1,14 +1,23 @@
 ---
-import Card from "../components/Card.astro";
 import Clock from "../components/Clock.astro";
 import Pokedex from "../components/Pokedex";
 import Bookmarks from "../components/Bookmarks";
 
 import Layout from "../layouts/Layout.astro";
+import Settings from "../components/Settings";
 ---
 
 <Layout title="New Tab">
-  <Clock />
-  <Pokedex client:load />
-  <Bookmarks client:load />
+  <div class="absolute top-20 left-0">
+    <Bookmarks client:load />
+  </div>
+  <div class="absolute top-5 right-5">
+    <Clock />
+  </div>
+  <div class="absolute top-56 right-5">
+    <Pokedex client:load />
+  </div>
+  <div>
+    <Settings client:load />
+  </div>
 </Layout>
