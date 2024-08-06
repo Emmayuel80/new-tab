@@ -42,7 +42,7 @@ const Pokedex = () => {
   }, []);
   return (
     <div>
-      <div className="flex mt-8">
+      <div className="flex">
         <div className="max-w-sm bg-gray-800 rounded-xl shadow-md overflow-hidden">
           <h1 className="text-4xl text-white text-center mt-8">
             Pokemon of the Day
