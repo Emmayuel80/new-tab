@@ -1,0 +1,20 @@
+<div class="max-w-sm bg-gray-800 rounded-xl shadow-md overflow-hidden">
+  <div class="p-8">
+    <p id="local-time" class="mt-2 text-center text-white text-4xl"></p>
+    <p id="local-date" class="mt-2 text-center text-white text-4xl"></p>
+  </div>
+</div>
+
+<script>
+  function updateTime() {
+    const timeElement = document.getElementById("local-time");
+    if (timeElement) {
+      const now = new Date();
+      timeElement.textContent = now.toLocaleTimeString();
+      document.getElementById("local-date").textContent =
+        now.toLocaleDateString();
+    }
+  }
+  setInterval(updateTime, 1000);
+  updateTime();
+</script>
