@@ -1,7 +1,7 @@
 import React from "react";
 import getDomain from "../services/getDomain";
 import Modal from "./Modal";
-import Bookmark from "./settings/Bookmark";
+import BookmarkSettings from "./settings/BookmarkSettings";
 import { FiPlus } from "react-icons/fi";
 
 const Bookmarks = () => {
@@ -20,7 +20,7 @@ const Bookmarks = () => {
         <div className="max-w-sm bg-gray-800 rounded-xl shadow-md overflow-hidden">
           <h1 className="text-4xl text-white text-center mt-8">Bookmarks</h1>
           <Modal title="Add Bookmark">
-            <Bookmark />
+            <BookmarkSettings />
           </Modal>
           <div className="p-8">
             {bookmarks.map((bookmark) => (

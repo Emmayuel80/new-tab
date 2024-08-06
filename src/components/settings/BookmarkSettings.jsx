@@ -1,7 +1,7 @@
 import React from "react";
 import getDomain from "../../services/getDomain";
 
-const Bookmark = ({ setPreventExit }) => {
+const BookmarkSettings = ({ setPreventExit }) => {
   const [bookmarks, setBookmarks] = React.useState([]);
   const [newBookmark, setNewBookmark] = React.useState({
     id: "",
@@ -193,4 +193,4 @@ const Bookmark = ({ setPreventExit }) => {
   );
 };
 
-export default Bookmark;
+export default BookmarkSettings;
