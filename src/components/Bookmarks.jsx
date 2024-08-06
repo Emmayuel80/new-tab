@@ -94,7 +94,7 @@ const Bookmarks = () => {
           </div>
         </div>
       </div>
-      <Modal title="Add Bookmark" open={showAdd} setOpen={setShowAdd}>
+      <Modal title="Bookmarks" open={showAdd} setOpen={setShowAdd}>
         <BookmarkSettings />
       </Modal>
     </div>
