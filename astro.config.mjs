@@ -8,8 +8,7 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   buildOptions: {
     site: "https://emmayuel80.github.io",
-    base: "new-tab",
+    base: "/new-tab/",
   },
   output: "static",
-  root: "./",
 });
