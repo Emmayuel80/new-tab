@@ -10,4 +10,5 @@ export default defineConfig({
     site: "https://emmayuel80.github.io",
     base: "new-tab",
   },
+  output: "hybrid",
 });
