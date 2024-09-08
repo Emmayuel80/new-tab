@@ -11,4 +11,5 @@ export default defineConfig({
     base: "new-tab",
   },
   output: "static",
+  root: "./",
 });
