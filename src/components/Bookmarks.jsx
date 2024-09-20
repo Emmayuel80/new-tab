@@ -74,7 +74,7 @@ const Bookmarks = () => {
               <div
                 key={bookmark.id}
                 className="flex items-center mt-2 hover:bg-gray-300 rounded-lg p-2 cursor-pointer select-none"
-                onClick={() => window.open(bookmark.url, "_blank")}
+                onClick={() => window.open(bookmark.url, "_self")}
                 role="button"
               >
                 <img
