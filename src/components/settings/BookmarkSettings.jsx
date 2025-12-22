@@ -28,9 +28,9 @@ const BookmarkSettings = ({ setPreventExit }) => {
       String.fromCharCode(Math.floor(Math.random() * 26) + 97) +
       Math.random().toString(16).slice(2) +
       Date.now().toString(16).slice(4);
-    newBookmark.icon = `https://legal-white-orca.faviconkit.com/${getDomain(
+    newBookmark.icon = `https://api-favicon.dev80z.duckdns.org/api/favicon/32/${getDomain(
       newBookmark.url
-    )}/32`;
+    )}`;
     setBookmarks([...bookmarks, newBookmark]);
     localStorage.setItem(
       "bookmarks",
@@ -48,9 +48,9 @@ const BookmarkSettings = ({ setPreventExit }) => {
   function editBookmark() {
     const newBookmarks = bookmarks.map((bookmark) => {
       if (bookmark.id === editId) {
-        newBookmark.icon = `https://legal-white-orca.faviconkit.com/${getDomain(
+        newBookmark.icon = `https://api-favicon.dev80z.duckdns.org/api/favicon/32/${getDomain(
           newBookmark.url
-        )}/32`;
+        )}`;
         return newBookmark;
       }
       return bookmark;
