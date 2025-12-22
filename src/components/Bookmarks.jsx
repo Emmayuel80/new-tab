@@ -79,9 +79,9 @@ const Bookmarks = () => {
               >
                 <img
                   className="w-10 h-10 rounded-full"
-                  src={`https://legal-white-orca.faviconkit.com/${getDomain(
+                  src={`https://api-favicon.dev80z.duckdns.org/api/favicon/32/${getDomain(
                     bookmark.url
-                  )}/32`}
+                  )}`}
                   alt={bookmark.name}
                 />
                 {!collapsed && (
