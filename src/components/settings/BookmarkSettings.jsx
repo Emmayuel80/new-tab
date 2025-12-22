@@ -86,9 +86,9 @@ const BookmarkSettings = ({ setPreventExit }) => {
           <div key={bookmark.id} className="flex items-center mt-2 grow w-full">
             <img
               className="w-6 h-6 rounded-full"
-              src={`https://legal-white-orca.faviconkit.com/${getDomain(
+              src={`https://api-favicon.dev80z.duckdns.org/api/favicon/32/${getDomain(
                 bookmark.url
-              )}/32`}
+              )}`}
               alt={bookmark.name}
             />
             {editId !== bookmark.id && (
